@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #004080;
+}
+
+/* Main Section Styles */
+.aptitude-test {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.aptitude-test h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.aptitude-test p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Quiz Container Styles */
+#quiz-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Canvas Styles */
+#resultsChart {
+    margin: 20px auto;
+    max-width: 600px;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aptitude Test</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aptitude.html">Aptitude Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="aptitude-test">
+        <h2>Interactive Aptitude Test</h2>
+        <p>Answer the following questions to discover your strengths.</p>
+        <div id="quiz-container">
+            <!-- Interactive questions will be dynamically added here -->
+        </div>
+        <canvas id="resultsChart" width="400" height="400"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Career Counseling Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
